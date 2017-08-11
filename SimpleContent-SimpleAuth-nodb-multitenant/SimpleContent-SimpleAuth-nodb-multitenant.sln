@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2372A970-DCA2-4FD7-B573-8243BBBDF7FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C298BC5C-DA23-4544-B48A-8194424984E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "src\WebApp\WebApp.csproj", "{EA43D973-8106-4615-9241-8DB1C4A36B2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA43D973-8106-4615-9241-8DB1C4A36B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA43D973-8106-4615-9241-8DB1C4A36B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA43D973-8106-4615-9241-8DB1C4A36B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA43D973-8106-4615-9241-8DB1C4A36B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA43D973-8106-4615-9241-8DB1C4A36B2E} = {2372A970-DCA2-4FD7-B573-8243BBBDF7FA}
+	EndGlobalSection
+EndGlobal

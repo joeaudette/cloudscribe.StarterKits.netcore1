@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="wwwroot\**\*;Views\**\*;nodb_storage\**\*;Themes\**\*;Areas\**\Views;navigation.xml">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+    <Content Remove="nodb_storage\**\*" CopyToPublishDirectory="Never" />
+    <Content Include="nodb_storage\**\*" CopyToPublishDirectory="Never" />
+
+    <Content Remove="wwwroot\lib\**\*" CopyToPublishDirectory="Never" />
+    <Content Remove="bower.json" CopyToPublishDirectory="Never" />
+    <Content Remove="bundleconfig.json" CopyToPublishDirectory="Never" />
+    <Content Remove="appsettings.dev.json" CopyToPublishDirectory="Never" />
+
+    <Content Include="wwwroot\lib\**\*" CopyToPublishDirectory="Never" />
+    <Content Include="bower.json" CopyToPublishDirectory="Never" />
+    <Content Include="bundleconfig.json" CopyToPublishDirectory="Never" />
+    <Content Include="appsettings.dev.json" CopyToPublishDirectory="Never" />
+
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="cloudscribe.SimpleContent.Web.Mvc" Version="1.0.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.Storage.NoDb" Version="1.1.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.Security.SimpleAuth" Version="1.1.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.MetaWeblog" Version="1.1.*" />
+    <PackageReference Include="cloudscribe.SimpleContent.Syndication" Version="1.1.*" />
+    <PackageReference Include="cloudscribe.Syndication.Web" Version="1.1.*" />
+   
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="1.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.IISIntegration" Version="1.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="1.1.*" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="1.1.*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="1.1.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="1.1.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.*" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="1.1.*" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.*" />
+    <PackageReference Include="SaasKit.Multitenancy" Version="1.1.4" />
+    
+    <PackageReference Include="Microsoft.Extensions.Options" Version="1.1.*" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="1.1.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="BundlerMinifier.Core" Version="2.*" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.*" />
+  </ItemGroup>
+
+
+</Project>

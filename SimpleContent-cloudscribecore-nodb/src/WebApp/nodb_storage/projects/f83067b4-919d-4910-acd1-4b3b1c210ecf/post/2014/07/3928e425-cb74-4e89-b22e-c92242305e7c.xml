@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-16"?>
+<post>
+  <title>post it notes</title>
+  <slug>post-it-notes</slug>
+  <correlationkey />
+  <author>Joe Audette</author>
+  <pubDate>2014-07-21T13:28:00.0000000Z</pubDate>
+  <lastModified>2017-05-15T16:34:31.3561618Z</lastModified>
+  <excerpt>foo</excerpt>
+  <content>&lt;p&gt;are useful to use&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="" src="/media/images/lady-things-ws.jpeg" style="height:412px; width:550px" /&gt;&lt;/p&gt;
+
+&lt;p&gt;if you use them&lt;/p&gt;
+</content>
+  <ispublished>true</ispublished>
+  <categories>
+    <category>food</category>
+  </categories>
+  <comments></comments>
+</post>
